@@ -1,0 +1,169 @@
+.appMain {
+    /* display: flex; */
+    background-color: rgb(15, 15, 15);
+}
+
+.sideBar {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100vh;
+    background-color: rgb(59, 59, 59);
+    position: fixed;
+    border-right: 3px solid rgb(126, 126, 126);
+    /* z-index: 10; */
+}
+
+header {
+    margin: 20px;
+    margin-top: 35px;
+    margin-left: 35px;
+    font-size: 40px;
+    font-family: fantasy;
+    letter-spacing: 10px;
+    line-height: 35px;
+    color: rgb(167, 167, 167);
+    animation: color 20s infinite linear;
+}
+
+@keyframes color {
+    0% {color: rgb(122, 122, 122);}
+    50% {color: rgb(41, 41, 41);}
+    100% {color: rgb(122, 122, 122);}
+  }
+
+span {
+    -webkit-text-stroke: 2px black;
+    -webkit-text-fill-color: rgb(187, 187, 187);
+}
+
+form {
+    margin-left: 13px;
+    display: flex;
+    flex-direction: column;
+    width: 175px;
+}
+
+.blogBuilder {
+    margin: 20px;
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+
+.inputTitle {
+    margin-bottom: 7px;
+    color: white;
+    background-color:  rgb(39, 39, 39);
+    border-radius: 5px;
+}
+
+.inputTitle:hover {
+    background-color: rgb(50, 50, 50);
+    transition: .5s;
+}
+
+.inputContent {
+    color: white;
+    height: 300px;
+    /* width: 177px; */
+    border-radius: 5px;
+    background-color: rgb(39, 39, 39);
+    /* text-align: start; */
+}
+
+.inputContent:hover {
+    background-color: rgb(50, 50, 50);
+    transition: .5s;
+}
+
+button {
+    /* align: center; */
+    /* width: 125px; */
+    color: rgb(163, 163, 163);
+    background-color: rgb(29, 29, 29);
+    margin-top: 7px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgb(18, 18, 18);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.blogCollection {
+    width: 75%;
+    margin-left: 25%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.blog {
+    width: 45%;
+    /* margin: 20px; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    position: relative;
+    background-color: rgb(85, 85, 85);
+    border: 2px solid rgb(139, 139, 139);
+    box-shadow: 50px 20px 30px black;
+    border-radius: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    animation: growBlog .7s;
+}
+
+@keyframes growBlog {
+    from {top: -1000px; transform: scale(0);}
+    to {top: 0px; transform: scale(1.0);}
+  }
+
+.blogTitle {
+    font-family: fantasy;
+    font-weight: 600;
+    letter-spacing: 6px;
+    font-size: 35px;
+    text-shadow: 2px 2px black;
+    /* text-decoration: underline; */
+    text-align: center;
+    color: rgb(165, 165, 165);
+    padding-bottom: 10px;
+}
+
+.deleteButt {
+    /* text-align: end; */
+    /* margin: 10px; */
+    margin-left: 410px;
+    font-weight: 700;
+    display: inline;
+    /* width: 50px; */
+    /* height: 50px; */
+    /* background-color: grey; */
+}
+
+.deleteButt:hover {
+    cursor: pointer;
+    color: rgb(182, 0, 0);
+    transition: .5s;
+}
+
+.editButt {
+    /* text-align: end; */
+    /* margin: 10px; */
+    margin-left: 383px;
+    font-weight: 650;
+    display: inline;
+}
+
+.editButt:hover {
+    cursor: pointer;
+    color: rgb(182, 182, 182);
+    transition: .7s;
+}
